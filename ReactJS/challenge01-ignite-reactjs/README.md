@@ -14,15 +14,16 @@
 
 # :rocket: Challenge Features
 
-- Add a new task: It must be possible to add a new task in the task state, with the fields id which must be generated randomly, title which must be text and isComplete which must start as false.
+- [x] Add a new task: It must be possible to add a new task in the task state, with the fields id which must be generated randomly, title which must be text and isComplete which must start as false.
 
-- Remove a task: You must receive an ID by parameter and remove the task that contains that ID from the state.
+- [x] Remove a task: You must receive an ID by parameter and remove the task that contains that ID from the state.
 
-- Mark and unmark a task as completed: You must change the status of isComplete for a task with a specific ID that is received by parameter.
+- [x] Mark and unmark a task as completed: You must change the status of isComplete for a task with a specific ID that is received by parameter.
 
 ## Additional features
 
-- Edit task: user can edit an task.
+- [x] Edit task: user can edit an task.
+- [ ] Tests for edit task feature.
 
 ## :syringe: Testing
 
