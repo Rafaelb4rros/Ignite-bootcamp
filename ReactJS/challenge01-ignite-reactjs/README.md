@@ -20,7 +20,7 @@
 
 - [x] Mark and unmark a task as completed: You must change the status of isComplete for a task with a specific ID that is received by parameter.
 
-## Additional features
+## Additional features (this features are not part of the challenge)
 
 - [x] Edit task: user can edit an task.
 - [ ] Tests for edit task feature.
