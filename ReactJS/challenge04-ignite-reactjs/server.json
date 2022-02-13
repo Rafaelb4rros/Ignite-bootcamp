@@ -1,0 +1,44 @@
+{
+  "foods": [
+    {
+      "image": "setIsopen",
+      "name": "setIsopen",
+      "price": "setIsopen",
+      "description": "setIsopen",
+      "available": true,
+      "id": 1
+    },
+    {
+      "image": "setIsopen",
+      "name": "",
+      "price": "",
+      "description": "",
+      "available": true,
+      "id": 2
+    },
+    {
+      "image": "",
+      "name": "setIsopen",
+      "price": "",
+      "description": "",
+      "available": true,
+      "id": 3
+    },
+    {
+      "image": "",
+      "name": "",
+      "price": "",
+      "description": "setIsopen",
+      "available": true,
+      "id": 4
+    },
+    {
+      "image": "setIsopensetIsopensetIsopen",
+      "name": "setIsopen",
+      "price": "",
+      "description": "",
+      "available": true,
+      "id": 5
+    }
+  ]
+}
