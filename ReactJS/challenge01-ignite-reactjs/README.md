@@ -8,8 +8,8 @@
 
 ---
 
-- [Features](#rocket-features)
-- [Testing Specification](#syringe-TestingSpecification)
+- [Features](#rocket-Challenge-Features)
+- [Testing Specification](#syringe-Testing)
 - [License](#closed_book-license)
 
 # :rocket: Challenge Features
