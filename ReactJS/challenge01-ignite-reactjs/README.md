@@ -9,7 +9,6 @@
 ---
 
 - [Features](#rocket-features)
-- [Installation](#construction_worker-installation)
 - [Testing Specification](#syringe-TestingSpecification)
 - [License](#closed_book-license)
 
@@ -37,25 +36,6 @@ For this challenge, we have the following tests:
 
 - **should be able to check a task**: For this test to pass, you must allow that when clicking on the checkbox next to the task, it is marked as completed or not completed according to its current state, changing its value from `isComplete` to `false` to `true` or conversely, from `true` to `false`.
 
-## :construction_worker: Installation
-
-**You need to install [Node.js] (Important: NodeJS must be in version 14.19.0) (https://nodejs.org/en/download/) and [Yarn](https://yarnpkg.com/) (or use npm instead yarn), then in order to clone the project via HTTPS, run this command:**
-
-```
-git clone https://github.com/Rafaelb4rros/challenge01-ignite-reactjs.git
-```
-
-SSH URLs provide access to a Git repository via SSH, a secure protocol. If you have a SSH key registered in your Github account, clone the project using this command:
-
-```
-git clone git@github.com:Rafaelb4rros/challenge01-ignite-reactjs.git
-```
-
-**Install dependencies**
-
-```
-yarn/npm install then yarn/npm start
-```
 
 <!-- LICENSE -->
 
