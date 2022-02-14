@@ -67,6 +67,6 @@ This project is under a license [MIT](./LICENSE).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-Challenge proposed with 💜 by Rocketseat 👋 [Join this great community!](https://discord.gg/KJVerdEynf)
+Challenge proposed with 💜 by Rocketseat 👋 [Join this community!](https://discord.gg/KJVerdEynf)
 
 Made with 💜 by [Rafael Barros](https://github.com/Rafaelb4rros) 🚀
