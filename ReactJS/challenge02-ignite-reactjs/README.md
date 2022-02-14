@@ -3,7 +3,7 @@
 </div>
 
 <h3 align="center"> 
-   Ignite ReactJS - Challenge 01: Componentizing an application
+   Ignite ReactJS - Challenge 02: Componentizing an application
 </h3>
 
 ---
