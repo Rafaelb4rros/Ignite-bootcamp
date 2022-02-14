@@ -21,20 +21,20 @@
 
 # :rocket: Challenge Features
 
-- [x] Add a new product to the cart;
-- [x] Remove a product from the cart;
-- [x] Change the quantity of a product in the cart;
-- [x] Calculation of the sub-total and total cart prices;
-- [x] Inventory validation;
-- [x] Display of error messages with react toastfy;
+- [x] Add a new product to the cart
+- [x] Store cart data in localStorare 
+- [x] Remove a product from the cart
+- [x] Change the quantity of a product in the cart
+- [x] Calculation of the sub-total and total cart prices
+- [x] Inventory validation
+    - [x] User can not increment product amount if the current amount are bigger than stock amount
+- [x] Display of error messages with react toastfy
 
 ## :construction_worker: Fake api resources
 
 For this challenge, in addition to the concepts seen in class, we will use some new things to make our application even better. So, before going directly to the challenge code, we’ll explain a little bit of:
 
 - Fake API with JSON Server;
-- Preserve cart data with localStorage API;
-- Show errors with toastify.
 
 ### Fake API with JSON Server
 
