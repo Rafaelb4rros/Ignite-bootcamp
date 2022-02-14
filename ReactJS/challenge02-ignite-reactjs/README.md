@@ -60,6 +60,8 @@ Note that he started a fake API with the `/genres` and` /movies` resources in `l
 
 That way, you just need to consume these API routes normally with Axios.
 
+<!-- LICENSE -->
+
 # :closed_book: License
 
 Released in 2021
