@@ -16,6 +16,8 @@ in Ignite you will be able to choose the trail that is most in line with your go
 - NodeJS
 - React Native
 - Elixir
+- 
+# :pushpin: Table of Contents
 
 ## Trails I'm interested in
 
@@ -32,6 +34,8 @@ in Ignite you will be able to choose the trail that is most in line with your go
 - [React Native](#rocket-React-Native) (Todo after NodeJS)
   - if your goal is aligned with mobile development,
     and you want to build modern apps for both iOS and Android natively, this Ignite is for you.
+
+---
 
 # :rocket: ReactJS
 
