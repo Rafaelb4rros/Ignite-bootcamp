@@ -7,6 +7,7 @@
 </h3>
 
 ---
+# :pushpin: Table of Contents
 
 - [Features](#rocket-Challenge-Features)
 - [Testing Specification](#syringe-Testing)
@@ -42,7 +43,7 @@ For this challenge, we have the following tests:
 
 # :closed_book: License
 
-Released in 2022
+Released in 2021
 This project is under a license [MIT](./LICENSE).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
