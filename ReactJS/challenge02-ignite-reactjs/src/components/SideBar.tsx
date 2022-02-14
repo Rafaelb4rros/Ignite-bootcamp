@@ -1,14 +1,19 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { api } from "./../services/api";
-import { GenreResponseProps } from "./types";
+import { GenreResponseProps, SideBarProps } from "./types";
 import { Button } from "./Button";
+
+import { AiOutlineMenuFold } from "react-icons/ai";
+import { AiOutlineMenuUnfold } from "react-icons/ai";
 
 export function SideBar({
   setSelectedGenreId,
   genres,
   selectedGenreId,
   setGenres,
-}: any) {
+}: SideBarProps) {
+  const [expandSidebar, setExpandSideBar] = useState(true);
+
   useEffect(() => {
     api.get<GenreResponseProps[]>("genres").then((response) => {
       setGenres(response.data);
@@ -20,7 +25,14 @@ export function SideBar({
   }
 
   return (
-    <nav className='sidebar'>
+    <nav className={`sidebar ${expandSidebar && "expanded"}`}>
+      <div
+        title='Menu'
+        className='sidebar_expand-btn'
+        onClick={() => setExpandSideBar(!expandSidebar)}
+      >
+        {expandSidebar ? <AiOutlineMenuFold /> : <AiOutlineMenuUnfold />}
+      </div>
       <span>
         Watch<p>Me</p>
       </span>

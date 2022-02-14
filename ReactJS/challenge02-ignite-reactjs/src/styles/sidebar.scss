@@ -1,15 +1,32 @@
 nav.sidebar {
+  height: 100vh;
   display: flex;
   flex-direction: column;
-
+  z-index: 2;
   align-items: center;
 
-  max-width: 24rem;
+  transition: all 0.1s ease-in-out;
+
+  max-width: 0rem;
+
+  .buttons-container,
+  span {
+    visibility: hidden;
+    background: transparent;
+  }
+
+  &.expanded {
+    max-width: 24rem;
+    background: var(--background2);
+    .buttons-container,
+    span {
+      visibility: visible;
+    }
+  }
+
   width: 100%;
 
   padding: 2rem;
-
-  background: var(--background2);
 
   > span {
     margin-bottom: 4.5rem;
@@ -28,5 +45,17 @@ nav.sidebar {
     flex-direction: column;
 
     width: 100%;
+  }
+}
+
+.sidebar_expand-btn {
+  width: 50px;
+  height: 50px;
+  margin-right: auto;
+  cursor: pointer;
+
+  svg {
+    width: 30px;
+    height: 50px;
   }
 }

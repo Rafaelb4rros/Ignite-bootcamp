@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { api } from "./../services/api";
 import { MovieCard } from "./MovieCard";
-import { MovieProps, GenreResponseProps } from "./types";
+import { MovieProps, GenreResponseProps, ContentProps } from "./types";
 
 export function Content({
   selectedGenre,
@@ -9,7 +9,8 @@ export function Content({
   setMovies,
   selectedGenreId,
   setSelectedGenre,
-}: any) {
+  setSelectedMovie,
+}: ContentProps) {
   useEffect(() => {
     api
       .get<MovieProps[]>(`movies/?Genre_id=${selectedGenreId}`)
@@ -37,6 +38,8 @@ export function Content({
           {movies.map((movie: MovieProps) => (
             <MovieCard
               key={movie.imdbID}
+              movie={movie}
+              setSelectedMovie={setSelectedMovie}
               title={movie.Title}
               poster={movie.Poster}
               runtime={movie.Runtime}
