@@ -28,7 +28,6 @@ const Home = (): JSX.Element => {
   const cartItemsAmount = cart.reduce((sumAmount, product) => {
     const newAmount = { ...sumAmount };
     newAmount[product.id] = product.amount;
-
     return newAmount;
   }, {} as CartItemsAmount);
 
@@ -47,9 +46,6 @@ const Home = (): JSX.Element => {
     loadProducts();
   }, []);
 
-  async function handleAddProduct(id: number) {
-    addProduct(id);
-  }
   return (
     <ProductList>
       {products.map((product) => (
@@ -60,7 +56,7 @@ const Home = (): JSX.Element => {
           <button
             type="button"
             data-testid="add-product-button"
-            onClick={() => handleAddProduct(product.id)}
+            onClick={() => addProduct(product.id)}
           >
             <div data-testid="cart-product-quantity">
               <MdAddShoppingCart size={16} color="#FFF" />
