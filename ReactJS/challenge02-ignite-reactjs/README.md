@@ -19,7 +19,7 @@
 # :pushpin: Table of Contents
 
 - [Features](#rocket-Challenge-Features)
-- [Testing Specification](#syringe-Testing)
+- [Api](#construction_worker-Fake-api-resources)
 - [License](#closed_book-license)
 
 # :rocket: Challenge Features
@@ -34,7 +34,7 @@
 - [x] Sidebar can now be minimized and expanded.
 - [x] Film card are now clickable and shows more details about the selected film.
 
-## :construction_worker: Preparing for the challenge
+## :construction_worker: Fake api resources
 
 For this challenge, in addition to the concepts seen in class, we will use some new things to make our application even better. So, before going directly to the challenge code, we will explain a little bit about Fake API with JSON Server.
 
