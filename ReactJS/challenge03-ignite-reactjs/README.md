@@ -26,6 +26,7 @@
 - [x] Change the quantity of a product in the cart;
 - [x] Calculation of the sub-total and total cart prices;
 - [x] Inventory validation;
+    - [x] User can not increment product amount if the current amount are bigger than stock amount
 - [x] Display of error messages with react toastfy;
 
 ## :construction_worker: Fake api resources
