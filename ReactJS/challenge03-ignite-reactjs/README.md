@@ -22,7 +22,7 @@
 # :rocket: Challenge Features
 
 - [x] Add a new product to the cart
-- [x] Store data in localStorare 
+- [x] Store cart data in localStorare 
 - [x] Remove a product from the cart
 - [x] Change the quantity of a product in the cart
 - [x] Calculation of the sub-total and total cart prices
