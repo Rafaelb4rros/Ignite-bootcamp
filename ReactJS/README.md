@@ -31,3 +31,10 @@ Challenge 03
 Challenge 04
 
 - [Refactoring classes and typescript](https://github.com/Rafaelb4rros/Ignite-bootcamp/tree/main/ReactJS/challenge04-ignite-reactjs)
+
+
+---
+
+Challenge 05
+
+- [Creating an application from scratch](https://github.com/Rafaelb4rros/spacetraveling)
