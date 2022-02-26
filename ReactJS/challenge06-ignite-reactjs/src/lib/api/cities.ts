@@ -1,0 +1,46 @@
+export const cities = [
+  {
+    name: "Dublin",
+    title: "Ireland capital",
+    country: "Ireland",
+    img: "https://images.unsplash.com/photo-1575283757439-bc4324f59810?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
+    continent: "Europe",
+    icon: "/images/italy.png",
+    descriptions: `
+    Dublin is a warm and welcoming city, known for the friendliness of its people and famous for its craic (“crack”)—that mixture of repartee, humour, intelligence, and acerbic and deflating insight that has attracted writers, intellectuals, and visitors for centuries. It has faded grandeur and a comfortably worn sense.`,
+    turistic_points: [
+      "The National Museum of Ireland",
+      "Grafton Street",
+      "Trinity College Dublin",
+      "The Guinness Storehouse",
+      "Powerscourt Center",
+      "Kilmainham Gaol",
+      "Croke Park stadium",
+      "Delahunt restaurant",
+    ],
+  },
+  {
+    name: "Venicy",
+    country: "Italy",
+    img: "https://images.unsplash.com/photo-1576413326475-ea6c788332fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1228&q=80",
+    icon: "/images/italy.png",
+    continent: "Europe",
+    description: `Venice, known also as the “City of Canals,” “The Floating City,” and “Serenissima,” is arguably one of Italy's most picturesque cities. With its winding canals, striking architecture, and beautiful bridges, Venice is a popular destination for travel.`,
+  },
+  {
+    name: "Moscow",
+    img: "https://images.unsplash.com/photo-1576413326475-ea6c788332fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1228&q=80",
+    country: "Russia",
+    icon: "/images/italy.png",
+    continent: "Europe, Asia",
+    description: `Moscow is the capital city and the most populous federal subject of Russia. The city is a major political, economic, cultural and scientific center in Russia and in Eastern Europe. ... Moscow is situated on the Moskva River in the Central Federal District of European Russia making it the world's most populated inland city.`,
+  },
+  {
+    name: "Orlando",
+    img: "https://images.unsplash.com/photo-1618945372420-2470ece5277c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    country: "USA",
+    icon: "/images/italy.png",
+    continent: "North America",
+    description: `Moscow is the capital city and the most populous federal subject of Russia. The city is a major political, economic, cultural and scientific center in Russia and in Eastern Europe. ... Moscow is situated on the Moskva River in the Central Federal District of European Russia making it the world's most populated inland city.`,
+  },
+];
