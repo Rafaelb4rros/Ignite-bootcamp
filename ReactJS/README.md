@@ -38,3 +38,9 @@ Challenge 04
 Challenge 05
 
 - [Creating an application from scratch](https://github.com/Rafaelb4rros/spacetraveling)
+
+---
+
+Challenge 06
+
+- [Interface with Chakra UI](https://github.com/Rafaelb4rros/Ignite-bootcamp/tree/main/ReactJS/challenge06-ignite-reactjs)
