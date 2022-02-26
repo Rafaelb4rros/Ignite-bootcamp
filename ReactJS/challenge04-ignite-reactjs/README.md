@@ -13,6 +13,10 @@
    <img src="./.github/docs/images/edit.png" alt="project edit modal picture" width="500">
 </div>
 
+## :rocket: About the challenge
+
+This will be an already functional application where its main objective is to perform two migration processes: from Javascript to Typescript and from Class Components to Function Components.
+
 ## :construction_worker: Preparing for the challenge
 
 For this challenge, in addition to the concepts seen in class, we will use the JSON server to create a Fake API with food data.
