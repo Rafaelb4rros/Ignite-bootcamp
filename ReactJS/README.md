@@ -44,3 +44,7 @@ Challenge 05
 Challenge 06
 
 - [Interface with Chakra UI](https://github.com/Rafaelb4rros/Ignite-bootcamp/tree/main/ReactJS/challenge06-ignite-reactjs)
+
+Challenge 07
+
+- [Image upload with next-js](https://github.com/Rafaelb4rros/Ignite-bootcamp/tree/main/ReactJS/challenge07-ignite-reactjs)
