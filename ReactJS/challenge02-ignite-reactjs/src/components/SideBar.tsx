@@ -1,28 +1,12 @@
-import { useEffect, useState } from "react";
-import { api } from "./../services/api";
-import { GenreResponseProps, SideBarProps } from "./types";
+import { memo, useCallback, useState } from "react";
 import { Button } from "./Button";
-
 import { AiOutlineMenuFold } from "react-icons/ai";
 import { AiOutlineMenuUnfold } from "react-icons/ai";
+import { useMovies } from "../contexts/MovieContext";
 
-export function SideBar({
-  setSelectedGenreId,
-  genres,
-  selectedGenreId,
-  setGenres,
-}: SideBarProps) {
+function SideBarComponent() {
+  const { genres, setSelectedGenreId, selectedGenreId } = useMovies();
   const [expandSidebar, setExpandSideBar] = useState(true);
-
-  useEffect(() => {
-    api.get<GenreResponseProps[]>("genres").then((response) => {
-      setGenres(response.data);
-    });
-  }, []);
-
-  function handleClickButton(id: number) {
-    setSelectedGenreId(id);
-  }
 
   return (
     <nav className={`sidebar ${expandSidebar && "expanded"}`}>
@@ -38,12 +22,12 @@ export function SideBar({
       </span>
 
       <div className='buttons-container'>
-        {genres.map((genre: GenreResponseProps) => (
+        {genres.map((genre) => (
           <Button
             key={String(genre.id)}
             title={genre.title}
             iconName={genre.name}
-            onClick={() => handleClickButton(genre.id)}
+            onClick={() => setSelectedGenreId(genre.id)}
             selected={selectedGenreId === genre.id}
           />
         ))}
@@ -51,3 +35,5 @@ export function SideBar({
     </nav>
   );
 }
+
+export const SideBar = memo(SideBarComponent);

@@ -1,8 +1,8 @@
 import { Star, Clock } from "react-feather";
-import { api } from "../services/api";
+import { MovieProps } from "../contexts/movie.types";
+import { useMovies } from "../contexts/MovieContext";
 
 import "../styles/movie-card.scss";
-import { MovieProps } from "./types";
 
 interface MovieCardProps {
   title: string;
@@ -10,7 +10,6 @@ interface MovieCardProps {
   rating: string;
   runtime: string;
   movie: MovieProps;
-  setSelectedMovie: (movie: MovieProps) => void;
 }
 
 export function MovieCard({
@@ -19,8 +18,9 @@ export function MovieCard({
   rating,
   runtime,
   movie,
-  setSelectedMovie,
 }: MovieCardProps) {
+  const { setSelectedMovie } = useMovies();
+
   return (
     <div onClick={() => setSelectedMovie(movie)} className='movie-card'>
       <img src={poster} alt={title} />

@@ -23,18 +23,12 @@ export interface GenreResponseProps {
   title: string;
 }
 
-export interface SideBarProps {
-  setSelectedGenreId: (genreId: number) => void;
+export interface MovieContextData {
   genres: GenreResponseProps[];
-  selectedGenreId: number;
-  setGenres: (genre: GenreResponseProps[]) => void;
-}
-
-export interface ContentProps {
-  selectedGenre: GenreResponseProps;
   movies: MovieProps[];
-  setMovies: (movie: MovieProps[]) => void;
+  setSelectedGenreId: (genreId: number) => void;
+  selectedMovie: MovieProps | null;
   selectedGenreId: number;
-  setSelectedMovie: (movie: MovieProps) => void;
-  setSelectedGenre: (genre: GenreResponseProps) => void;
+  selectedGenre: GenreResponseProps | undefined;
+  setSelectedMovie: (movie: MovieProps | null) => void;
 }

@@ -1,17 +1,14 @@
-import { MovieProps } from "./types";
 import { IoIosArrowBack } from "react-icons/io";
+import { Star } from "react-feather";
+import { useMovies } from "../contexts/MovieContext";
 
 import "../styles/movie-details.scss";
-import { Star } from "react-feather";
+import { Content } from "./Content";
 
-export const MovieDetails = ({
-  selectedMovie,
-  setSelectedMovie,
-}: {
-  selectedMovie: MovieProps;
-  setSelectedMovie: (selectedMovie: MovieProps | null) => void;
-}) => {
-  return (
+export const MovieDetails = () => {
+  const { setSelectedMovie, selectedMovie } = useMovies();
+
+  return selectedMovie ? (
     <section className='movie-details'>
       <div className='movie_details-content'>
         <button
@@ -56,5 +53,7 @@ export const MovieDetails = ({
         </div>
       </div>
     </section>
+  ) : (
+    <Content />
   );
 };

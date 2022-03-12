@@ -1,15 +1,15 @@
 .container {
   max-width: 52.5rem;
-  width: 100%;
-
+  width: 100vw;
+  height: 100vh;
   margin: 0 auto;
+  position: relative;
 }
 
 header {
   span.category {
     display: block;
     margin-top: 2rem;
-
     font-size: 2.25rem;
     font-weight: 600;
     color: var(--gray);
@@ -22,7 +22,7 @@ header {
 
 main {
   width: 100%;
-  margin-top: 5.625rem;
+  margin-top: 3rem;
 
   .movies-list {
     display: grid;
