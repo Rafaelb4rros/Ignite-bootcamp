@@ -53,7 +53,7 @@ This will be an application where your main objective is to add some code snippe
 - [React Query](https://react-query.tanstack.com/)
 - [IMGBB](https://pt-br.imgbb.com/)
 
-# :rocket: Technologies Additional challenges
+# :rocket: Additional challenges
 
 - [ ] Upload file with Drag and Drop.
 - [ ] Improve performance with react hooks.
