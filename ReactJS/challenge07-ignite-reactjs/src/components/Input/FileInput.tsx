@@ -21,6 +21,7 @@ import {
   forwardRef,
   useCallback,
   useEffect,
+  DragEvent,
 } from 'react';
 import {
   FieldError,
@@ -68,23 +69,12 @@ const FileInputBase: ForwardRefRenderFunction<
     {} as CancelTokenSource
   );
 
-  const handleImageUpload = useCallback(
-    async (event: React.ChangeEvent<HTMLInputElement>): Promise<void> => {
-      if (!event.target.files?.length) {
-        return;
-      }
-
-      setImageUrl('');
-      setLocalImageUrl('');
-      setError('image', null);
-      setIsSending(true);
-
-      await onChange(event);
-      trigger('image');
-
+  const upload = useCallback(
+    async (files: FileList): Promise<void> => {
+      if (!files.length) return;
       const formData = new FormData();
 
-      formData.append(event.target.name, event.target.files[0]);
+      formData.append(name, files[0]);
       formData.append('key', process.env.NEXT_PUBLIC_IMGBB_API_KEY);
 
       const { CancelToken } = axios;
@@ -107,7 +97,7 @@ const FileInputBase: ForwardRefRenderFunction<
         );
 
         setImageUrl(response.data.data.url);
-        setLocalImageUrl(URL.createObjectURL(event.target.files[0]));
+        setLocalImageUrl(URL.createObjectURL(files[0]));
       } catch (err) {
         if (err?.message === 'Cancelled image upload.') return;
 
@@ -123,9 +113,59 @@ const FileInputBase: ForwardRefRenderFunction<
         setProgress(0);
       }
     },
-    [onChange, setError, setImageUrl, setLocalImageUrl, trigger, toast]
+    [name, setImageUrl, setLocalImageUrl, toast]
   );
 
+  // const onDrop = useCallback(
+  //   async (e: DragEvent) => {
+  //     if (!e.dataTransfer?.files?.length) return;
+  //     const inputElement = document.getElementById(name) as HTMLInputElement;
+
+  //     const event = new Event('change');
+  //     event.target.files = e.dataTransfer.files;
+  //     inputElement.dispatchEvent(event);
+  //     trigger(name);
+  //   },
+  //   [name]
+  // );
+
+  const handleImageUpload = useCallback(
+    async (event: React.ChangeEvent<HTMLInputElement>): Promise<void> => {
+      if (!event.target.files?.length) {
+        return;
+      }
+
+      setImageUrl('');
+      setLocalImageUrl('');
+      setError('image', null);
+      setIsSending(true);
+
+      await onChange(event);
+      trigger('image');
+
+      upload(event.target.files);
+    },
+
+    [onChange, setError, setImageUrl, setLocalImageUrl, trigger, upload]
+  );
+
+  useEffect(() => {
+    const events = ['dragenter', 'dragover', 'dragleave', 'drop'];
+
+    const preventDefault = (e: Event): void => {
+      e.preventDefault();
+      e.stopPropagation();
+    };
+    events.forEach(event => {
+      document.body.addEventListener(event, preventDefault, false);
+    });
+
+    return () => {
+      events.forEach(event => {
+        document.body.removeEventListener(event, preventDefault, false);
+      });
+    };
+  });
   useEffect(() => {
     if (error?.message && isSending && cancelToken?.cancel) {
       cancelToken.cancel('Cancelled image upload.');

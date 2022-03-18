@@ -27,15 +27,38 @@ This will be an application where your main objective is to add some code snippe
 - Modal and Toast display with Chakra UI;
 - Between others.
 
-## :construction_worker: Technologies
+# :pushpin: Table of Contents
 
-- React Query
-- React Hook Form
-- ImgBB
-- FaunaDB
-- Next.js API
+- [Screenshots](#camera-screenshot)
+- [Technologies](#rocket-technologies)
+- [Additional challenges](#computer-how-to-run-Additional-challenges)
+- [License](#closed_book-License)
 
-<!-- LICENSE -->
+# :camera: Screenshots
+
+<div align="center">
+   <img src="./.github/images/home.png" width="500px">
+</div>
+
+# :rocket: Technologies
+
+- [Typescript](https://www.typescriptlang.org/)
+- [NextJS](https://nextjs.org/)
+- [FaunaDB](https://fauna.com/)
+- [Jest](https://jestjs.io/pt-BR/)
+- [React hook form](https://react-hook-form.com/)
+- [React](https://reactjs.org/)
+- [Chakra UI](https://chakra-ui.com/)
+- [YUP](https://www.npmjs.com/package/yup)
+- [React Query](https://react-query.tanstack.com/)
+- [IMGBB](https://pt-br.imgbb.com/)
+
+# :rocket: Technologies Additional challenges
+
+- [ ] Upload file with Drag and Drop.
+- [ ] Improve performance with react hooks.
+
+ <!-- LICENSE -->
 
 # :closed_book: License
 
