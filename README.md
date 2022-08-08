@@ -10,18 +10,7 @@ in Ignite you will be able to choose the trail that is most in line with your go
 
 ---
 
-## All ignite trails
-
-- ReactJS
-- NodeJS
-- React Native
-- Elixir
-- 
-# :pushpin: Table of Contents
-
-## Trails I'm interested in
-
-- [ReactJS](#rocket-ReactJS): In progress.
+- [ReactJS](#rocket-ReactJS): Completed.
 
   - If your goal is aligned with the frontend,
     and you want to build modern and reactive web interfaces using a modular and scalable library, this Ignite is for you.
@@ -29,21 +18,13 @@ in Ignite you will be able to choose the trail that is most in line with your go
 - [Node Js](#rocket-NodeJS) (Todo after ReactJS)
 
   - If your goal is aligned with the backend,
-    and you want to build simple, scalable architectures for the web using a flexible and popular language, this trail is for you.
-
-- [React Native](#rocket-React-Native) (Todo after NodeJS)
-  - if your goal is aligned with mobile development,
-    and you want to build modern apps for both iOS and Android natively, this Ignite is for you.
-
+    and you want to build simple, scalable architectures for the web using a flexible and popular language, this trail is for you
+    .
 ---
 
 # :rocket: ReactJS
 
 - [ReactJS: Challenges](https://github.com/Rafaelb4rros/Ignite-bootcamp/tree/main/ReactJS)
-
-# :rocket: React Native
-
-- i don`t start this trail yet.
 
 # :rocket: NodeJS
 
