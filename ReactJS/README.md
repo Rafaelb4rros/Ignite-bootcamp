@@ -3,11 +3,6 @@
 </p>
 
 ---
-
-## [IGNITE](https://www.rocketseat.com.br/ignite): ReactJS
-
-# This trail is In progress.
-
 # :pushpin: Challenges
 
 Challenge 01
